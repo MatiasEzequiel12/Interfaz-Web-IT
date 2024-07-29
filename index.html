@@ -11,16 +11,19 @@
 </head>
 
 <body>
+    <div id="modal">
+        <span class="icon-cerrar" onclick="cerrarModal();">Cerrar</span>
+        <p>Envianos un correo electronico al <a href="mailito:mailto@info.com">Email</a></p>
+    </div>
     <nav>
-
         <img src="imagenes/AD.png" alt=""></div>
-        <div>
+        <div id="desplegar">
+            <span class="icon-cerrar" onclick="cerrar()";></span>
             <a href="#">About</a>
-
             <a href="#">Testimonios</a>
-            <a href="#">Contacto</a>
+            <a href="#" onclick="abrirModal()";>Contacto</a>
         </div>
-        </div>
+        <span class="icon-menu" onclick="abrir()";></span>
     </nav>
     <header>
         <div class="cuarenta">
@@ -28,11 +31,11 @@
 
             <p>Agencia Digital al servicio del cliente y de su marca.
             </p>
-            <a href="#">contactános</a>
+            <a href="#" onclick="abrirModal()";>contactános</a>
 
         </div>
         <div>
-            <img src="imagenes/img1.png" alt="">
+            <img class="animado" src="imagenes/img1.png" alt="">
         </div>
     </header>
 
@@ -40,7 +43,7 @@
 
         <section>
             <div>
-                <img src="imagenes/img2.png" alt="">
+                <img class="animado" src="imagenes/img2.png" alt="">
             </div>
             <div class="cuarenta">
                 <h2>Diseño de Marca e Imagen</h2>
@@ -57,7 +60,7 @@
 
                 <p>Comúnmente utilizado en la industria gráfica, de impresión y publicación.</p>
             </div>
-            <div> <img src="imagenes/img3.png" alt=""> </div>
+            <div> <img class="animado" src="imagenes/img3.png" alt=""> </div>
 
         </section>
 
@@ -87,14 +90,14 @@
 
         <section>
             <div>
-                <img src="imagenes/img4.png">
+                <img class="animado" src="imagenes/img4.png">
             </div>
             <div class="cuarenta">
 
                 <h2>Formá parte de nuestro equipo</h2>
                 <p>visitá nuestro perfil de LinkedIn</p>
 
-                <a href="#">contactános</a>
+                <a href="#" onclick="abrirModal()">contactános</a>
 
 
         </section>
@@ -117,6 +120,7 @@
         <p>@Todos los derechos reservados</p>
 
     </footer>
+    <script src="js/codigo.js"></script>
 </body>
 
 </html>
